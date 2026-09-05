@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cardápio NFC</title>
+<style>
+  :root {
+    --bg: #1b1410;
+    --card: #2a1f19;
+    --accent: #e8a33d;
+    --text: #f5ede1;
+    --muted: #b8a99a;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+  }
+  header {
+    text-align: center;
+    padding: 48px 20px 24px;
+  }
+  header h1 {
+    margin: 0;
+    font-size: 2.2rem;
+    letter-spacing: 1px;
+    color: var(--accent);
+  }
+  header p {
+    color: var(--muted);
+    margin-top: 8px;
+  }
+  main {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 0 20px 60px;
+  }
+  section {
+    margin-bottom: 32px;
+  }
+  section h2 {
+    color: var(--accent);
+    border-bottom: 1px solid #4a382c;
+    padding-bottom: 8px;
+    font-size: 1.3rem;
+  }
+  .item {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    background: var(--card);
+    padding: 14px 16px;
+    border-radius: 10px;
+    margin-top: 12px;
+  }
+  .item-info h3 {
+    margin: 0 0 4px;
+    font-size: 1.05rem;
+  }
+  .item-info p {
+    margin: 0;
+    color: var(--muted);
+    font-size: 0.9rem;
+  }
+  .price {
+    font-weight: bold;
+    color: var(--accent);
+    white-space: nowrap;
+  }
+  footer {
+    text-align: center;
+    color: var(--muted);
+    font-size: 0.85rem;
+    padding-bottom: 30px;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>🍽️ Cardápio NFC</h1>
+  <p>Escaneou, viu o cardápio. Simples assim.</p>
+</header>
+
+<main>
+  <section>
+    <h2>Entradas</h2>
+    <div class="item">
+      <div class="item-info">
+        <h3>Pão de alho</h3>
+        <p>Com queijo derretido e ervas</p>
+      </div>
+      <span class="price">R$ 18</span>
+    </div>
+    <div class="item">
+      <div class="item-info">
+        <h3>Bolinho de bacalhau</h3>
+        <p>6 unidades, molho tártaro</p>
+      </div>
+      <span class="price">R$ 28</span>
+    </div>
+  </section>
+
+  <section>
+    <h2>Pratos Principais</h2>
+    <div class="item">
+      <div class="item-info">
+        <h3>Risoto de camarão</h3>
+        <p>Arroz arbóreo, camarões e limão siciliano</p>
+      </div>
+      <span class="price">R$ 62</span>
+    </div>
+    <div class="item">
+      <div class="item-info">
+        <h3>Filé ao molho madeira</h3>
+        <p>Acompanha purê e legumes salteados</p>
+      </div>
+      <span class="price">R$ 58</span>
+    </div>
+  </section>
+
+  <section>
+    <h2>Bebidas</h2>
+    <div class="item">
+      <div class="item-info">
+        <h3>Suco natural</h3>
+        <p>Laranja, limão ou maracujá</p>
+      </div>
+      <span class="price">R$ 12</span>
+    </div>
+    <div class="item">
+      <div class="item-info">
+        <h3>Água com gás</h3>
+        <p>500ml</p>
+      </div>
+      <span class="price">R$ 7</span>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>Página de teste — publicada via GitHub Pages 🚀</p>
+</footer>
+
+</body>
+</html>
