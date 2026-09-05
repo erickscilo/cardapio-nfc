@@ -1,7 +1,7 @@
-# Cardápio NFC 🍽️
+# Cardápio Biza Pizzas 🍕
 
-Landing page de um cardápio digital acessado via NFC, feita para explorar o que dá
-para construir com o **GitHub Pages** (site 100% estático, sem backend).
+Cardápio digital estático da Biza Pizzas, publicado com **GitHub Pages** (sem backend).
+Foco no cardápio: pizzas primeiro (tamanhos, sabores salgados, especiais e doces), depois esfihas.
 
 ## Publicado em
 
@@ -21,16 +21,20 @@ script.js    → dados do cardápio + interações (busca, filtro, tema, etc.)
 ## Funcionalidades
 
 - Cardápio com busca por nome/descrição e filtro por categoria
+- Categorias na ordem: Pizzas Salgadas, Sabores Especiais, Pizzas Doces, Esfihas Salgadas, Esfihas Doces
+- Cards de tamanhos e preços (Broto, Grande, Gigante) em destaque
 - Tema claro/escuro com persistência (`localStorage`) e detecção do tema do sistema
 - Animações de entrada ao rolar a página (`IntersectionObserver`)
 - Menu responsivo (mobile-first) com navegação mobile
-- Botão flutuante de WhatsApp e "voltar ao topo"
-- Seção explicando o fluxo de leitura via NFC
+- Botões flutuantes de WhatsApp e "voltar ao topo"
 
 ## Editando o cardápio
 
-Os pratos ficam no array `MENU` em `script.js` — basta editar nome, descrição,
-preço, categoria (`entradas`, `principais`, `bebidas`, `sobremesas`) e tags.
+Os sabores ficam no array `MENU` em `script.js` — edite nome, descrição, categoria
+(`pizzas-salgadas`, `especiais`, `pizzas-doces`, `esfihas-salgadas`, `esfihas-doces`),
+preço (só esfihas têm preço por unidade; pizzas são precificadas por tamanho) e tags.
+
+Os preços dos tamanhos de pizza ficam direto no `index.html`, na seção `#tamanhos`.
 
 ## Rodando localmente
 

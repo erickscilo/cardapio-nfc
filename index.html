@@ -3,9 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Cardápio NFC — Sabor & Ponto</title>
-<meta name="description" content="Cardápio digital com acesso por aproximação NFC. Escaneou, viu o cardápio.">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🍽️</text></svg>">
+<title>Biza Pizzas — Cardápio</title>
+<meta name="description" content="Cardápio digital da Biza Pizzas. Pizzas salgadas, sabores especiais, pizzas doces e esfihas — preços e sabores, direto no celular.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🍕</text></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -16,15 +16,15 @@
 <header class="site-header">
   <div class="container nav-inner">
     <a href="#top" class="brand">
-      <span class="brand-badge">🍽️</span>
-      <span class="brand-name">Sabor & Ponto</span>
+      <span class="brand-badge">🍕</span>
+      <span class="brand-name">Biza Pizzas</span>
     </a>
 
     <nav class="main-nav" id="main-nav">
-      <a href="#cardapio">Cardápio</a>
-      <a href="#como-funciona">Como funciona</a>
-      <a href="#sobre">Sobre</a>
-      <a href="#contato">Contato</a>
+      <a href="#pizzas" data-cat-link="pizzas-salgadas">Pizzas</a>
+      <a href="#tamanhos">Tamanhos</a>
+      <a href="#pizzas" data-cat-link="esfihas-salgadas">Esfihas</a>
+      <a href="https://wa.me/12677487163" target="_blank" rel="noopener">Pedir no WhatsApp</a>
     </nav>
 
     <div class="header-actions">
@@ -36,112 +36,81 @@
 
 <main id="top">
 
-  <!-- HERO -->
-  <section class="hero">
-    <div class="container hero-grid">
-      <div>
-        <span class="eyebrow">✨ Cardápio digital via NFC</span>
-        <h1>Aproxime o celular e veja o <em>cardápio</em> na hora</h1>
-        <p class="lead">
-          Sem app, sem instalar nada. Um toque na etiqueta NFC da mesa abre o cardápio
-          completo, sempre atualizado, direto no navegador do cliente.
-        </p>
-        <div class="hero-ctas">
-          <a href="#cardapio" class="btn btn-primary">📋 Ver cardápio</a>
-          <a href="#como-funciona" class="btn btn-ghost">Como funciona</a>
+  <!-- TOPO -->
+  <section class="menu-top">
+    <div class="container menu-top-inner">
+      <span class="eyebrow">🍕 Cardápio digital</span>
+      <h1>O sabor da <em>Biza Pizzas</em>, escolha e peça</h1>
+      <p class="lead">Pizzas artesanais, sabores especiais e esfihas — todo mundo com borda recheada de graça.</p>
+      <div class="menu-top-chips">
+        <span class="chip">🛵 Entrega grátis até 1,5 milhas</span>
+        <span class="chip">🧀 Borda recheada inclusa</span>
+        <span class="chip">🥤 Refrigerante de brinde na Gigante</span>
+      </div>
+      <div class="hero-ctas">
+        <a href="https://wa.me/12677487163" target="_blank" rel="noopener" class="btn btn-primary">💬 Pedir no WhatsApp</a>
+        <a href="#pizzas" class="btn btn-ghost">Ver cardápio</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- TAMANHOS -->
+  <section class="section" id="tamanhos" style="padding-top:20px">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Tamanhos & preços</span>
+        <h2>Escolha o tamanho da sua pizza</h2>
+        <p>Todas as pizzas salgadas acompanham molho de tomate, azeitonas, orégano e mussarela.</p>
+      </div>
+
+      <div class="size-grid">
+        <div class="size-card reveal">
+          <span class="size-name">Broto</span>
+          <span class="size-slices">6 fatias</span>
+          <span class="size-price">$27<small>+Tax</small></span>
+          <span class="size-flavors">2 sabores tradicionais</span>
         </div>
-        <div class="hero-stats">
-          <div><strong>100%</strong><span>Sem app pra instalar</span></div>
-          <div><strong>&lt; 2s</strong><span>Pra abrir o cardápio</span></div>
-          <div><strong>24/7</strong><span>Sempre disponível</span></div>
+        <div class="size-card size-card-featured reveal">
+          <span class="size-badge">Mais pedida</span>
+          <span class="size-name">Grande</span>
+          <span class="size-slices">8 fatias</span>
+          <span class="size-price">$32<small>+Tax</small></span>
+          <span class="size-flavors">2 sabores tradicionais</span>
+        </div>
+        <div class="size-card reveal">
+          <span class="size-name">Gigante</span>
+          <span class="size-slices">12 fatias</span>
+          <span class="size-price">$40<small>+Tax</small></span>
+          <span class="size-flavors">3 sabores tradicionais + 🥤 refrigerante de brinde</span>
         </div>
       </div>
 
-      <div class="nfc-visual">
-        <div class="nfc-card">
-          <div class="nfc-pulse">📶</div>
-          <p class="nfc-caption">Aproxime o celular da etiqueta NFC na mesa</p>
-        </div>
+      <div class="size-notes reveal">
+        <p><strong>🍤 Sabor especial Camarão:</strong> acréscimo de $1 por fatia.</p>
+        <p><strong>🧀 Borda recheada grátis</strong> em todas as pizzas: cheddar, catupiry, chocolate ou doce de leite.</p>
       </div>
     </div>
   </section>
 
   <!-- CARDÁPIO -->
-  <section class="section" id="cardapio">
+  <section class="section" id="pizzas" style="background:var(--bg-soft)">
     <div class="container">
       <div class="section-head reveal">
         <span class="eyebrow">Cardápio</span>
-        <h2>O que está sendo servido hoje</h2>
-        <p>Filtre por categoria ou busque pelo nome do prato.</p>
+        <h2>Sabores</h2>
+        <p>Filtre por categoria ou busque pelo nome do sabor.</p>
       </div>
 
       <div class="menu-toolbar reveal">
         <div class="search-box">
           <span class="icon">🔎</span>
-          <input type="text" id="search-input" placeholder="Buscar prato, ex: risoto...">
+          <input type="text" id="search-input" placeholder="Buscar sabor, ex: calabresa...">
         </div>
         <div class="category-tabs" id="category-tabs"></div>
       </div>
 
       <div class="menu-grid" id="menu-grid"></div>
-      <p class="no-results" id="no-results">Nenhum prato encontrado com esse filtro 🍽️</p>
-    </div>
-  </section>
-
-  <!-- COMO FUNCIONA -->
-  <section class="section" id="como-funciona" style="background:var(--bg-soft)">
-    <div class="container">
-      <div class="section-head reveal">
-        <span class="eyebrow">Passo a passo</span>
-        <h2>Como funciona o cardápio NFC</h2>
-        <p>Três passos entre o cliente sentar e já estar navegando no cardápio.</p>
-      </div>
-
-      <div class="steps">
-        <div class="step-card reveal">
-          <div class="step-num">1</div>
-          <h3>Aproxime o celular</h3>
-          <p>Uma etiqueta NFC discreta fica fixada na mesa ou no balcão.</p>
-        </div>
-        <div class="step-card reveal">
-          <div class="step-num">2</div>
-          <h3>O cardápio abre sozinho</h3>
-          <p>O navegador abre automaticamente esta página, sem precisar de app.</p>
-        </div>
-        <div class="step-card reveal">
-          <div class="step-num">3</div>
-          <h3>Escolha e aproveite</h3>
-          <p>Navegue por categoria, veja preços e chame o garçom pelo WhatsApp.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- SOBRE -->
-  <section class="section" id="sobre">
-    <div class="container">
-      <div class="info-band reveal">
-        <div>
-          <span class="eyebrow">Sobre a casa</span>
-          <h2 style="margin:0 0 6px;font-size:1.8rem;">Feito com carinho, servido com pressa boa</h2>
-          <p style="color:var(--muted);margin:0;">
-            Ambiente aconchegante, ingredientes frescos e uma cozinha que não corta caminho.
-          </p>
-          <ul class="info-list">
-            <li><span class="check">✔</span> Ingredientes selecionados diariamente</li>
-            <li><span class="check">✔</span> Opções vegetarianas e veganas</li>
-            <li><span class="check">✔</span> Ambiente pet friendly</li>
-            <li><span class="check">✔</span> Estacionamento conveniado</li>
-          </ul>
-        </div>
-
-        <div class="hours-card">
-          <h3>🕐 Horário de funcionamento</h3>
-          <div class="hours-row"><span>Segunda a sexta</span><span>11h30 — 15h · 18h — 23h</span></div>
-          <div class="hours-row"><span>Sábado</span><span>11h30 — 23h30</span></div>
-          <div class="hours-row"><span>Domingo</span><span>11h30 — 17h</span></div>
-        </div>
-      </div>
+      <p class="no-results" id="no-results">Nenhum sabor encontrado com esse filtro 🍕</p>
     </div>
   </section>
 
@@ -152,44 +121,43 @@
   <div class="container footer-grid">
     <div class="footer-brand">
       <a href="#top" class="brand" style="margin-bottom:12px;">
-        <span class="brand-badge">🍽️</span>
-        <span class="brand-name">Sabor & Ponto</span>
+        <span class="brand-badge">🍕</span>
+        <span class="brand-name">Biza Pizzas</span>
       </a>
-      <p>Cardápio digital de teste, publicado com GitHub Pages para explorar o que dá pra fazer com um site estático.</p>
+      <p>Pizzas e esfihas artesanais. Peça pelo WhatsApp e receba com entrega grátis até 1,5 milhas.</p>
       <div class="social-row">
-        <a href="#" aria-label="Instagram">📷</a>
-        <a href="#" aria-label="Facebook">📘</a>
-        <a href="https://wa.me/5511999999999" aria-label="WhatsApp">💬</a>
+        <a href="https://instagram.com/bizapizza" target="_blank" rel="noopener" aria-label="Instagram">📷</a>
+        <a href="https://wa.me/12677487163" target="_blank" rel="noopener" aria-label="WhatsApp">💬</a>
       </div>
     </div>
 
     <div class="footer-col">
-      <h4>Navegação</h4>
+      <h4>Cardápio</h4>
       <ul>
-        <li><a href="#cardapio">Cardápio</a></li>
-        <li><a href="#como-funciona">Como funciona</a></li>
-        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#tamanhos">Tamanhos & preços</a></li>
+        <li><a href="#pizzas" data-cat-link="pizzas-salgadas">Pizzas</a></li>
+        <li><a href="#pizzas" data-cat-link="esfihas-salgadas">Esfihas</a></li>
       </ul>
     </div>
 
     <div class="footer-col">
       <h4>Contato</h4>
       <ul>
-        <li>📍 Rua Exemplo, 123 — São Paulo/SP</li>
-        <li>📞 (11) 99999-9999</li>
-        <li>✉️ contato@saboreponto.com</li>
+        <li>📷 @bizapizza</li>
+        <li>📞 (267) 748-7163</li>
+        <li>🥟 Esfihas: venda mínima de 5, podendo ser uma de cada sabor</li>
       </ul>
     </div>
   </div>
 
   <div class="container footer-bottom">
-    © 2026 Sabor & Ponto · Página de demonstração publicada via GitHub Pages 🚀
+    © 2026 Biza Pizzas · Cardápio digital publicado via GitHub Pages 🍕
   </div>
 </footer>
 
 <div class="fab">
   <button class="fab-top" id="fab-top" aria-label="Voltar ao topo">↑</button>
-  <a class="fab-whatsapp" href="https://wa.me/5511999999999" target="_blank" rel="noopener" aria-label="Chamar no WhatsApp">💬</a>
+  <a class="fab-whatsapp" href="https://wa.me/12677487163" target="_blank" rel="noopener" aria-label="Chamar no WhatsApp">💬</a>
 </div>
 
 <script src="script.js"></script>
